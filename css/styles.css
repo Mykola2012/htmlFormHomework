@@ -42,6 +42,6 @@ main {
   border: 2px solid green;
 }
 
-.invalid {
+.boll-volume > label > input:invalid {
   border: 2px solid red;
 }
