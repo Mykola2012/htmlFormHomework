@@ -13,9 +13,15 @@ main {
   width: 100%;
 }
 
+h1 {
+  display: none;
+}
+
 .boll-volume {
   border: 2px solid black;
+  border-radius: 10px;
   padding: 20px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,10 +44,90 @@ main {
   border: 1px solid black;
 }
 
-.valid {
-  border: 2px solid green;
-}
-
 .boll-volume > label > input:invalid {
   border: 2px solid red;
+}
+
+.contact-form {
+  min-width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 3px gray;
+}
+
+.title-form {
+  font-size: 1.5rem;
+}
+
+.sub-title-form {
+  font-size: 0.9rem;
+  font-weight: lighter;
+  margin: 20px 0;
+  line-height: 15px;
+}
+
+.contact-form label {
+  padding: 5px 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.contact-form label > span {
+  margin-top: 5px;
+}
+
+.contact-form label > select {
+  padding: 3px;
+}
+
+.contact-form label > input,
+select {
+  flex-basis: 76%;
+  margin-top: 5px;
+}
+
+.contact-form label > input:invalid,
+select:invalid {
+  border: 1px solid red;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-basis: 76%;
+}
+
+.contact-form > .lable-name .input-wrapper > input {
+  max-width: 45%;
+  flex-basis: 100%;
+}
+
+.message-input {
+  min-height: 90px;
+}
+
+.line-form {
+  margin: 15px 0 20px;
+  background-color: black;
+  max-width: 100%;
+  height: 1px;
+}
+
+.wrapper-btn {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.submit-btn {
+  flex-basis: 76%;
+  padding: 5px;
+  cursor: pointer;
 }

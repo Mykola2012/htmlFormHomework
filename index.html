@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <script defer src="./js/index.js"></script>
     <title>HTML Forms</title>
   </head>
   <body>
     <main>
+      <h1></h1>
       <form action="#" class="boll-volume">
         <label>
           <span>Радиус:</span>
@@ -23,6 +25,56 @@
           />
         </label>
         <p class="boll-result"></p>
+      </form>
+
+      <form action="#" class="contact-form">
+        <h2 class="title-form">Contact form</h2>
+        <h3 class="sub-title-form">
+          Please fill in your information and we'll be sending your order.
+        </h3>
+        <label class="lable-name">
+          <span>Your name</span>
+          <div class="input-wrapper">
+            <input
+              class="input-first-name"
+              type="text"
+              name="first-name"
+              placeholder="first name"
+              autofocus
+            />
+            <input
+              class="input-last-name"
+              type="text"
+              name="last-name"
+              placeholder="last name"
+            />
+          </div>
+        </label>
+        <label>
+          <span>Your email</span>
+          <input type="email" name="email" placeholder="your_maile@maile.com" />
+        </label>
+        <label>
+          <span>Phone *</span>
+          <input type="tel" name="tel-number" placeholder="+380460000000" />
+        </label>
+        <label>
+          <span>Message subject *</span>
+          <select name="message-subject">
+            <option value="other">Other</option>
+            <option value="mistake">Mistake</option>
+            <option value="question">Question</option>
+            <option value="complaint">Complaint</option>
+          </select>
+        </label>
+        <label>
+          <span>Message *</span>
+          <input class="message-input" type="text" name="message" />
+        </label>
+        <div class="line-form"></div>
+        <div class="wrapper-btn">
+          <button class="submit-btn" type="submit">Submit Form</button>
+        </div>
       </form>
     </main>
   </body>

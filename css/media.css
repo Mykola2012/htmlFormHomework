@@ -1,0 +1,62 @@
+@media screen and (max-width: 780px) {
+  .contact-form label > input,
+  select {
+    flex-basis: 65%;
+    margin-top: 5px;
+  }
+
+  .input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: 65%;
+  }
+
+  .submit-btn {
+    flex-basis: 65%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .contact-form {
+    min-width: 320px;
+    align-items: center;
+  }
+
+  .contact-form label {
+    justify-content: center;
+  }
+
+  .sub-title-form {
+    max-width: 65%;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .contact-form > .lable-name .input-wrapper > input {
+    margin-top: 5px;
+  }
+
+  .input-wrapper {
+    flex-basis: 82%;
+  }
+
+  .contact-form label > input,
+  select {
+    flex-basis: 90%;
+    margin-top: 8px;
+  }
+
+  .contact-form label span {
+    padding: 0 30px 0 30px;
+    margin: 0 auto;
+  }
+
+  .wrapper-btn {
+    justify-content: center;
+  }
+
+  .line-form {
+    min-width: 80%;
+  }
+}
