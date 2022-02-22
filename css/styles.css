@@ -82,19 +82,25 @@ h1 {
   margin-top: 5px;
 }
 
-.contact-form label > select {
-  padding: 3px;
-}
-
 .contact-form label > input,
 select {
-  flex-basis: 76%;
-  margin-top: 5px;
+  padding: 5px;
 }
 
-.contact-form label > input:invalid,
-select:invalid {
-  border: 1px solid red;
+.contact-form label input,
+select,
+textarea {
+  flex-basis: 76%;
+  margin-top: 5px;
+  outline: none;
+}
+
+.contact-form label > input:not(:placeholder-shown):invalid {
+  border: 2px solid red;
+}
+
+.invalid {
+  border: 2px solid red;
 }
 
 .input-wrapper {
@@ -107,10 +113,7 @@ select:invalid {
 .contact-form > .lable-name .input-wrapper > input {
   max-width: 45%;
   flex-basis: 100%;
-}
-
-.message-input {
-  min-height: 90px;
+  padding: 5px;
 }
 
 .line-form {

@@ -1,6 +1,7 @@
 @media screen and (max-width: 780px) {
   .contact-form label > input,
-  select {
+  select,
+  textarea {
     flex-basis: 65%;
     margin-top: 5px;
   }
@@ -35,6 +36,7 @@
 
   .contact-form > .lable-name .input-wrapper > input {
     margin-top: 5px;
+    text-align: center;
   }
 
   .input-wrapper {
@@ -42,9 +44,11 @@
   }
 
   .contact-form label > input,
-  select {
+  select,
+  textarea {
     flex-basis: 90%;
     margin-top: 8px;
+    text-align: center;
   }
 
   .contact-form label span {
