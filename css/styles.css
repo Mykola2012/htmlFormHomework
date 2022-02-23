@@ -96,11 +96,19 @@ textarea {
 }
 
 .contact-form label > input:not(:placeholder-shown):invalid {
-  border: 2px solid red;
+  border: 1px solid red;
+}
+
+.contact-form label > input:not(:placeholder-shown):valid {
+  border: 1px solid green;
 }
 
 .invalid {
-  border: 2px solid red;
+  border: 1px solid red;
+}
+
+.valid {
+  border: 1px solid green;
 }
 
 .input-wrapper {
