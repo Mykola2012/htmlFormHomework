@@ -19,7 +19,7 @@
 }
 
 @media screen and (max-width: 460px) {
-  .contact-form {
+  .form-continer {
     min-width: 320px;
     align-items: center;
   }

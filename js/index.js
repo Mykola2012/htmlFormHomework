@@ -7,7 +7,7 @@ bollFormEl.addEventListener("input", calcVolumeBoll);
 const textareaEl = document.querySelector("textarea");
 
 textareaEl.oninput = (e) => {
-  const TEXTAREA_REG_EXP = /^\S+$/;
+  const TEXTAREA_REG_EXP = /\S+/;
   if (TEXTAREA_REG_EXP.test(e.target.value)) {
     e.target.classList.add("valid");
     e.target.classList.remove("invalid");

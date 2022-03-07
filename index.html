@@ -27,69 +27,75 @@
         <p class="boll-result"></p>
       </div>
 
-      <form action="#" class="contact-form">
+      <div class="form-continer">
         <h2 class="title-form">Contact form</h2>
         <h3 class="sub-title-form">
           Please fill in your information and we'll be sending your order.
         </h3>
-        <label class="lable-name">
-          <span>Your name</span>
-          <div class="input-wrapper">
+        <form action="#" class="contact-form">
+          <label class="lable-name">
+            <span>Your name</span>
+            <div class="input-wrapper">
+              <input
+                class="input-first-name"
+                type="text"
+                name="first-name"
+                placeholder="first name"
+                autofocus
+                pattern="^[A-Z][a-z]{1,36}(-[A-Z][a-z]{1,36})?$"
+              />
+              <input
+                class="input-last-name"
+                type="text"
+                name="last-name"
+                placeholder="last name"
+                pattern="^[A-Z][a-z]{1,36}(-[A-Z][a-z]{1,36})?$"
+              />
+            </div>
+          </label>
+          <label>
+            <span>Your email</span>
             <input
-              class="input-first-name"
-              type="text"
-              name="first-name"
-              placeholder="first name"
-              autofocus
-              pattern="^[A-Z][a-z]{1,36}(-[A-Z][a-z]{1,36})?$"
+              type="email"
+              name="email"
+              placeholder="your_maile@maile.com"
             />
+          </label>
+          <label>
+            <span>Phone *</span>
             <input
-              class="input-last-name"
-              type="text"
-              name="last-name"
-              placeholder="last name"
-              pattern="^[A-Z][a-z]{1,36}(-[A-Z][a-z]{1,36})?$"
+              type="tel"
+              name="tel-number"
+              placeholder="+380460000000"
+              pattern="^\+380(66|67|68|73|96|97|98|99)\d{7}"
+              required
             />
+          </label>
+          <label>
+            <span>Message subject *</span>
+            <select name="message-subject">
+              <option value="other">Other</option>
+              <option value="mistake">Mistake</option>
+              <option value="question">Question</option>
+              <option value="complaint">Complaint</option>
+            </select>
+          </label>
+          <label>
+            <span>Message *</span>
+            <textarea
+              class="message-textarea"
+              name="message"
+              minlength="1"
+              rows="4"
+              required
+            ></textarea>
+          </label>
+          <div class="line-form"></div>
+          <div class="wrapper-btn">
+            <button class="submit-btn" type="submit">Submit Form</button>
           </div>
-        </label>
-        <label>
-          <span>Your email</span>
-          <input type="email" name="email" placeholder="your_maile@maile.com" />
-        </label>
-        <label>
-          <span>Phone *</span>
-          <input
-            type="tel"
-            name="tel-number"
-            placeholder="+380460000000"
-            pattern="^\+380(66|67|68|73|96|97|98|99)\d{7}"
-            required
-          />
-        </label>
-        <label>
-          <span>Message subject *</span>
-          <select name="message-subject">
-            <option value="other">Other</option>
-            <option value="mistake">Mistake</option>
-            <option value="question">Question</option>
-            <option value="complaint">Complaint</option>
-          </select>
-        </label>
-        <label>
-          <span>Message *</span>
-          <textarea
-            class="message-textarea"
-            name="message"
-            minlength="1"
-            rows="4"
-            required
-          ></textarea>
-        </label>
-        <div class="line-form"></div>
-        <div class="wrapper-btn">
-          <button class="submit-btn" type="submit">Submit Form</button>
-        </div>
-      </form>
+        </form>
+      </div>
     </main>
   </body>
 </html>
