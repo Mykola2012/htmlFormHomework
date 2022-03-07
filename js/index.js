@@ -4,12 +4,6 @@ const bollFormEl = document.querySelector(".boll-volume");
 
 bollFormEl.addEventListener("input", calcVolumeBoll);
 
-function calcVolumeBoll(e) {
-  const pBollResultEl = document.querySelector(".boll-result");
-
-  pBollResultEl.textContent = `${(4 / 3) * Math.PI * e.target.value ** 3}`;
-}
-
 const textareaEl = document.querySelector("textarea");
 
 textareaEl.oninput = (e) => {
@@ -22,3 +16,11 @@ textareaEl.oninput = (e) => {
     e.target.classList.add("invalid");
   }
 };
+
+function calcVolumeBoll(e) {
+  const pBollResultEl = document.querySelector(".boll-result");
+
+  if (Number.isInteger(Number(e.target.value))) {
+    pBollResultEl.textContent = `${(4 / 3) * Math.PI * e.target.value ** 3}`;
+  }
+}
